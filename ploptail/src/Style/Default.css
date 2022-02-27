@@ -1,0 +1,106 @@
+/* Navbar CSS */
+
+nav {
+  margin-top: 0;
+  background-color: #faefc6;
+  border-bottom: 2px solid #0d3765;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  list-style: none;
+  align-self: center;
+  color: black;
+}
+
+nav img {
+  height: 50px;
+  width: 50px;
+}
+
+a {
+  color: #f95535;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0d3765;
+}
+
+@media (max-width: 700px) {
+  nav li {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 500px) {
+  nav li {
+    font-size: 0.8em;
+  }
+}
+
+/* End Navbar CSS */
+
+/* Banniere CSS */
+.banniere {
+  background: linear-gradient(#f95535, #ee9548, #f4d35b);
+  height: 250px;
+  margin: 0;
+  margin-top: 50px;
+}
+
+.banniere-h1 {
+  margin-top: 0;
+  padding-top: 90px;
+  color: #0d3765;
+}
+
+@media (max-width: 700px) {
+  .banniere {
+    font-size: 0.7em;
+  }
+}
+
+/* End of Banniere CSS */
+
+/* Footer CSS */
+
+footer {
+  background: linear-gradient(#faefc6, #f4d35b, #ee9548, #f95535);
+  text-align: center;
+  padding: 1.5rem 0 1.5rem 0;
+  font-size: 0.7em;
+}
+
+footer h2 {
+  color: #0d3765;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+@media (min-width: 700px) {
+  footer {
+    padding: 0.3em;
+    font-size: 0.9em;
+  }
+}
+
+.content-wrap {
+  padding-bottom: 2.5rem;
+  min-height: 100vh;    /* Footer height */
+}

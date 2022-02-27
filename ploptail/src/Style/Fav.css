@@ -1,0 +1,95 @@
+.fav-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.favorite-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 80px;
+  margin-bottom: 150px;
+}
+
+.fav-item {
+  background-color: #faefc6;
+  box-shadow: 8px 8px 2px 1px rgba(249, 85, 53, 0.3);
+  border: 1px solid;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  height: 230px;
+  width: 250px;
+  margin-top: 40px;
+}
+
+.fav-text {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+}
+
+.fav-img {
+  align-self: center;
+}
+
+.fav-button {
+  margin-top: 10px;
+  align-self: center;
+}
+
+.isFavorite {
+  width: 40px;
+  height: 40px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/35/Emoji_u2665.svg");
+  background-size: 100%;
+}
+
+.notFavorite {
+  width: 40px;
+  height: 40px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/4f/Ei-heart.svg");
+  background-size: 100%;
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+  .fav-item {
+    width: 220px;
+  }
+
+  .favorite-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 501px) and (max-width: 700px) {
+  .fav-item {
+    width: 200px;
+  }
+
+  .favorite-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 700px) and (max-width: 800px) {
+  .fav-item {
+    width: 250px;
+  }
+
+  .favorite-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 801px) and (max-width: 999px) {
+  .fav-items {
+    width: 250px;
+  }
+
+  .favorite-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
